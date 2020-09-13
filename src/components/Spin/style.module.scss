@@ -38,3 +38,20 @@
     cursor: pointer;
   }
 }
+
+.photoShown {
+  position: absolute;
+  right: 22vw;
+  top: 23vw;
+  width: 300px;
+  height: 300px;
+  border-radius: 500px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  -moz-box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+}

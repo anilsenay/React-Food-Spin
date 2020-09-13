@@ -6,6 +6,7 @@ import spinImage from "../../assets/images/spin.svg";
 import Button from "./spin_button";
 
 import { useStore } from "../../hooks/store.hook";
+import PhotoShown from "./photo_shown";
 
 interface Props {}
 
@@ -23,6 +24,7 @@ export default function Spin({}: Props): ReactElement {
           style={{ rotate: `${index * 36}deg` }}
         />
       </div>
+      <PhotoShown />
       <Button setImageIndex={setImageIndex} imageIndex={imageIndex} />
     </>
   );
