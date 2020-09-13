@@ -16,7 +16,13 @@
   align-items: end;
   display: flex;
   .spinImage {
-    margin-bottom: -375px;
+    margin-bottom: -420px;
+
+    -webkit-transition: 300ms linear all;
+    -moz-transition: 300ms linear all;
+    -o-transition: 300ms linear all;
+    transition: 300ms linear all;
+    -ms-transition: 300ms linear all;
   }
 }
 
@@ -27,4 +33,8 @@
   position: absolute;
   right: 12vw;
   top: 35vw;
+
+  .buttonStyle {
+    cursor: pointer;
+  }
 }
