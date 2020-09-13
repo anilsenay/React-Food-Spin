@@ -5,10 +5,13 @@ import spinImage from "../../assets/images/spin.svg";
 
 import Button from "./spin_button";
 
+import { useStore } from "../../hooks/store.hook";
+
 interface Props {}
 
 export default function Spin({}: Props): ReactElement {
   const [imageIndex, setImageIndex] = useState(0);
+  const index = useStore((state) => state.index);
   return (
     <>
       <div className={styles.container}>
@@ -17,7 +20,7 @@ export default function Spin({}: Props): ReactElement {
           className={styles.spinImage}
           alt="spin"
           loading="lazy"
-          style={{ rotate: `${imageIndex * 36}deg` }}
+          style={{ rotate: `${index * 36}deg` }}
         />
       </div>
       <Button setImageIndex={setImageIndex} imageIndex={imageIndex} />
