@@ -25,7 +25,7 @@ export default function Spin(): ReactElement {
           className={styles.spinImage}
           alt=""
           loading="lazy"
-          style={{ rotate: `${index * 36}deg` }}
+          style={{ transform: `rotate(${index * 36}deg)` }}
         />
       </div>
       <PhotoShown />

@@ -37,18 +37,20 @@
   transition: background-color 0.5s ease-in-out;
 
   .spinImage {
-    margin-bottom: -44vw;
     width: 90vw;
     height: 90vw;
+    position: absolute;
+    top: 40vw;
 
     @include md {
       width: 56vw;
       height: 56vw;
-      margin-bottom: -23vw;
+      top: 50vw;
     }
     @include lg {
       width: 45vw;
       height: 45vw;
+      top: 58vw;
     }
     @include xl {
       width: 45vw;
