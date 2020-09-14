@@ -4,6 +4,7 @@
 .App {
   margin-left: 40px;
   margin-right: 40px;
+  padding-bottom: 40px;
 
   @include md {
     margin-left: 70px;
