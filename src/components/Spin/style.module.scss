@@ -15,6 +15,12 @@
   justify-content: center;
   align-items: end;
   display: flex;
+
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+
   .spinImage {
     margin-bottom: -420px;
 
@@ -55,30 +61,47 @@
   -ms-border-radius: 500px;
   -o-border-radius: 500px;
 
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
+
 .startAnimation {
-  -webkit-animation: spin 2s linear;
-  -moz-animation: spin 2s linear;
-  animation: spin 2s linear;
+  -webkit-animation: spin 0.2s linear;
+  -moz-animation: spin 0.2s linear;
+  animation: spin 0.2s linear;
 }
 
 @-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(270deg) scale(0.6);
+  }
   100% {
-    -moz-transform: rotate(360deg);
+    -moz-transform: rotate(360deg) scale(1);
   }
 }
 @-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(270deg) scale(0.6);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg) scale(1);
   }
 }
 @keyframes spin {
+  0% {
+    -webkit-transform: rotate(270deg) scale(0.6);
+    transform: rotate(270deg) scale(0.6);
+    -moz-transform: rotate(270deg) scale(0.6);
+    -ms-transform: rotate(270deg) scale(0.6);
+    -o-transform: rotate(270deg) scale(0.6);
+  }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+    -moz-transform: rotate(360deg) scale(1);
+    -ms-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
   }
 }
