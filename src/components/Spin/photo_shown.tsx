@@ -5,16 +5,15 @@ import { useStore } from "../../hooks/store.hook";
 
 import { images } from "../../assets/images/meals";
 
-interface Props {}
-
-export default function PhotoShown({}: Props): ReactElement {
-  const index = useStore((state) => state.index);
+export default function PhotoShown(): ReactElement {
+  const index: number = useStore((state) => state.index);
 
   return (
     <>
       {images.map((item, i) => {
         return (
           <img
+            key={i}
             src={images[i]}
             className={`${styles.photoShown} ${
               ((index % 5) + 5) % 5 === i && styles.startAnimation
