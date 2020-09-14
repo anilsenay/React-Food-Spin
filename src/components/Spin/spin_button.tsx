@@ -5,15 +5,7 @@ import ButtonImage from "../../assets/images/button.svg";
 
 import { useStore } from "../../hooks/store.hook";
 
-interface Props {
-  setImageIndex: any;
-  imageIndex: number;
-}
-
-export default function Button({
-  setImageIndex,
-  imageIndex,
-}: Props): ReactElement {
+export default function Button(): ReactElement {
   const increaseIndex = useStore((state) => state.increaseIndex);
   const decreaseIndex = useStore((state) => state.decreaseIndex);
 

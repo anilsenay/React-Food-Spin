@@ -5,10 +5,8 @@ import cart from "../../assets/images/cart.svg";
 import menu from "../../assets/images/menu.svg";
 import close from "../../assets/images/close.svg";
 
-interface Props {}
-
-export default function Header({}: Props): ReactElement {
-  const [display, setDisplay] = useState({});
+export default function Header(): ReactElement {
+  const [display, setDisplay] = useState<object>({});
 
   return (
     <>

@@ -9,11 +9,10 @@ import PhotoShown from "./photo_shown";
 
 import { useStore } from "../../hooks/store.hook";
 
-interface Props {}
+export default function Spin(): ReactElement {
+  const [imageIndex, setImageIndex] = useState<number>(0);
+  const index: number = useStore((state) => state.index);
 
-export default function Spin({}: Props): ReactElement {
-  const [imageIndex, setImageIndex] = useState(0);
-  const index = useStore((state) => state.index);
   return (
     <>
       <div

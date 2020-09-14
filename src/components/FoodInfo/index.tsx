@@ -5,11 +5,9 @@ import meals from "../../consts/meals";
 
 import { useStore } from "../../hooks/store.hook";
 
-interface Props {}
-
-export default function FoodInfo({}: Props): ReactElement {
-  const index = useStore((state) => state.index);
-  const indexModule = ((index % 5) + 5) % 5;
+export default function FoodInfo(): ReactElement {
+  const index: number = useStore((state) => state.index);
+  const indexModule: number = ((index % 5) + 5) % 5;
 
   return (
     <div className={styles.container}>
