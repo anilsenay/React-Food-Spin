@@ -68,8 +68,8 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  width: 72vw;
-  right: 13vw;
+  width: 73vw;
+  right: 14vw;
   top: 48vw;
   @include md {
     width: 50vw;
@@ -89,10 +89,10 @@
 
 .photoShown {
   position: absolute;
-  right: 36vw;
-  top: 36vw;
-  height: 26vw;
-  width: 26vw;
+  right: 34vw;
+  top: 31vw;
+  height: 32vw;
+  width: 32vw;
 
   @include md {
     right: 39vw;
