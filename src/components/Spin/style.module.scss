@@ -1,10 +1,25 @@
+@import "../../breakpoints.scss";
+
 .container {
   background-color: #eaffe2;
   width: 80vw;
   height: 80vw;
   position: absolute;
-  right: -10vw;
-  top: -50vw;
+  width: 90vw;
+  height: 90vw;
+  right: 5vw;
+  top: -40vw;
+  @include md {
+    width: 80vw;
+    height: 80vw;
+    right: 10vw;
+    top: -40vw;
+  }
+  @include lg {
+    right: -10vw;
+    top: -50vw;
+  }
+
   z-index: -1;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -22,7 +37,23 @@
   transition: background-color 0.5s ease-in-out;
 
   .spinImage {
-    margin-bottom: -420px;
+    margin-bottom: -44vw;
+    width: 90vw;
+    height: 90vw;
+
+    @include md {
+      width: 56vw;
+      height: 56vw;
+      margin-bottom: -23vw;
+    }
+    @include lg {
+      width: 45vw;
+      height: 45vw;
+    }
+    @include xl {
+      width: 45vw;
+      height: 45vw;
+    }
 
     -webkit-transition: 300ms linear all;
     -moz-transition: 300ms linear all;
@@ -37,8 +68,19 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  right: 12vw;
-  top: 35vw;
+  width: 72vw;
+  right: 13vw;
+  top: 48vw;
+  @include md {
+    width: 50vw;
+    right: 25vw;
+    top: 42vw;
+  }
+  @include lg {
+    width: 36vw;
+    right: 12vw;
+    top: 35vw;
+  }
 
   .buttonStyle {
     cursor: pointer;
@@ -47,10 +89,24 @@
 
 .photoShown {
   position: absolute;
-  right: 22vw;
-  top: 23vw;
-  width: 300px;
-  height: 300px;
+  right: 36vw;
+  top: 36vw;
+  height: 26vw;
+  width: 26vw;
+
+  @include md {
+    right: 39vw;
+    top: 28vw;
+    width: 21vw;
+    height: 21vw;
+  }
+  @include lg {
+    right: 22vw;
+    top: 23vw;
+    width: 15vw;
+    height: 15vw;
+  }
+
   border-radius: 500px;
   background-color: white;
   -webkit-box-shadow: 0px 4px 20px 2px rgb(201, 201, 201);
