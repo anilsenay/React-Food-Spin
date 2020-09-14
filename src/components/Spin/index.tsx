@@ -30,7 +30,7 @@ export default function Spin(): ReactElement {
         />
       </div>
       <PhotoShown />
-      <Button setImageIndex={setImageIndex} imageIndex={imageIndex} />
+      <Button />
     </>
   );
 }
