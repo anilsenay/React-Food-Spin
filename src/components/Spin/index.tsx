@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 import styles from "./style.module.scss";
 
 import spinImage from "../../assets/images/spin.png";
@@ -10,7 +10,6 @@ import PhotoShown from "./photo_shown";
 import { useStore } from "../../hooks/store.hook";
 
 export default function Spin(): ReactElement {
-  const [imageIndex, setImageIndex] = useState<number>(0);
   const index: number = useStore((state) => state.index);
 
   return (
