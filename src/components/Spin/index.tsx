@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from "react";
 import styles from "./style.module.scss";
 
-import spinImage from "../../assets/images/spin.svg";
+import spinImage from "../../assets/images/spin.png";
 import meals from "../../consts/meals";
 
 import Button from "./spin_button";
