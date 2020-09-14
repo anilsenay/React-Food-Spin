@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import "./breakpoints.scss";
 
 .App {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  @include md {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @include lg {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
