@@ -16,7 +16,9 @@ export default function PhotoShown({}: Props): ReactElement {
         return (
           <img
             src={images[i]}
-            className={styles.photoShown}
+            className={`${styles.photoShown} ${
+              ((index % 5) + 5) % 5 === i && styles.startAnimation
+            }`}
             alt="spin"
             loading="lazy"
             style={{ opacity: ((index % 5) + 5) % 5 === i ? 1 : 0 }}
