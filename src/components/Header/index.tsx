@@ -8,7 +8,9 @@ interface Props {}
 export default function Header({}: Props): ReactElement {
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.logo} alt="logo" />
+      <a href="#">
+        <img src={logo} className={styles.logo} alt="logo" />
+      </a>
       <div className={styles.headerItems}>
         <a className={styles.headerItem} href="#">
           Breakfast
